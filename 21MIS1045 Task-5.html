@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>21MIS1045 Task-5</title>
+<style>table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th input {
+    min-width: 10px;
+    max-width: 98%;
+    width: 100%;
+}
+h1{
+    color: blue;
+}
+</style>
+
+</head>
+<body>
+<center>
+<h1>Registration Form</h1>
+<form>
+<table>
+<tr>
+<th>First Name:</th>
+<th><input type="text" name="first_name"></th>
+</tr>
+<tr>
+<th>Last Name:</th>
+<th><input type="text" name="last_name"></th>
+</tr>
+<tr>
+<th>Email:</th>
+<th><input type="email" name="email"></th>
+</tr>
+<tr>
+<th>Password:</th>
+<th><input type="password" name="password"></th>
+</tr>
+<tr>
+<th>Re-enter Password:</th>
+<th><input type="password" name="repassword"></th>
+</tr>
+<tr>
+<th>Gender:</th>
+<td>
+   <input type="radio" name="gender" value="male">Male
+   <input type="radio" name="gender" value="female">Female
+</td>
+</tr>
+<tr>
+<th>Age:</th>
+<th><input type="number" name="age"></th>
+</tr>
+<tr>
+<th>Phone Number:</th>
+<th><input type="tel" name="phone"></th>
+</tr>
+<tr>
+<th>Address:</th>
+<td><textarea name="address" rows="4" cols="30"></textarea></td>
+</tr>
+<tr>
+<th>State:</th>
+<th><input type="text" name="state"></th>
+</tr>
+<tr>
+<th>Country:</th>
+<td>
+<select name="country">
+<option value="select">Choose your country</option>
+<option value="us">United States</option>
+<option value="ca">India</option>
+<option value="uk">United Kingdom</option>
+</select>
+</td>
+</tr>
+<tr>
+<th>Languages Known:</th>
+<td>
+<input type="checkbox" name="languages[]" value="english">English
+<input type="checkbox" name="languages[]" value="telugu">Telugu
+<input type="checkbox" name="languages[]" value="kannada">Kannada
+<input type="checkbox" name="languages[]" value="hindi">Hindi
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<input type="checkbox" name="declaration" required>Hereby, I declare that all the given details are true.
+</td>
+</tr>
+<tr>
+    <td colspan="2">
+       <h6>Login to <a href="www.ethnus.com">Ethnus</a> website</h6>
+    </td>
+</tr>
+</table><br>
+<input type="submit" value="Register"/>
+</form>
+</center>
+</body>
+</html>
